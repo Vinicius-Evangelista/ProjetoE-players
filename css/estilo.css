@@ -659,13 +659,8 @@ main {
 }
 
 .emblema_equipe input {
-    height: 30px;
-    background: #ABABAB;
-    border: none;
-    width: 21%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 14%;
+    
 }
 
 .emblema_equipe input::before {
