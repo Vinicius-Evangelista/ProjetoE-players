@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@ header {
 
 .container_header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 100%;
 }
 
@@ -108,19 +109,22 @@ main {
     color: white;
 }
 
-.box_button button {
+.box_button a {
     /* style button */
     width: 75%;
     height: 73px;
     font-family: 'Roboto', sans-serif;
     background-color: #00C2FF;
     /* style text */
-    border: none;
     font-style: normal;
     font-size: 44px;
     border-radius: 19px;
     text-transform: uppercase;
     color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* logos */
@@ -436,11 +440,11 @@ footer {
     height: 100%;
     justify-content: space-evenly;
     align-items: center;
-  
 }
 
-li { list-style-type: disc;
-    color: white
+li {
+    color: white;
+    font-size: 27px;
 }
 
 .links_footer h2 {
@@ -458,7 +462,6 @@ li { list-style-type: disc;
     font-style: normal;
     font-size: 18px;
     color: white;
-    
 }
 
 .logo_footer {
@@ -510,6 +513,13 @@ li { list-style-type: disc;
     color: white;
 }
 
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    font-style: normal;
+}
+
 .redes {
     display: flex;
     align-items: center;
@@ -524,103 +534,428 @@ li { list-style-type: disc;
     font-size: 22px;
 }
 
+/* cadastro de times */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #1E1C21;
+    ;
+    margin-top: 65px;
+}
+
+.fundo {
+    background-image: url(../img/Rectangle\ 6.png);
+    height: 237px;
+}
+
+.fundo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.filtro_lol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002070aa;
+    height: 237px;
+}
+
+.filtro_lol h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+}
+
+.content_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 790px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box_inputs {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(54, 54, 54, 1) 25%, rgba(41, 39, 41, 1) 62%, rgba(0, 0, 0, 1) 100%);
+    width: 60%;
+    height: 340px;
+    box-shadow: 1px 1px 20px 4px #000000;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.escolha_de_times {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%
+}
+
+.escolha_de_times a {
+    /* box */
+    display: inline-block;
+    width: 36%;
+    height: 40px;
+    background: #001F70;
+    border-radius: 10px;
+    /* text */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome_equipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.nome_equipe input {
+    height: 30px;
+    background: #ABABAB;
+    border: none;
+}
+
+.nome_equipe span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+}
+
+.emblema_equipe {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.emblema_equipe span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+}
+
+.emblema_equipe input {
+    height: 30px;
+    background: #ABABAB;
+    border: none;
+    width: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emblema_equipe input::before {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: black;
+}
+
+.lista_de_times {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.lista_de_times h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+}
+
+.header_times {
+    background: #010101;
+    width: 60%;
+    height: 50px;
+    border: 2px white solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 23%;
+}
+
+.nome_time {
+    width: 60%;
+    display: inline-block;
+}
+
+.nome_emblema {
+    display: inline-block;
+    width: 26%;
+}
+
+.header_times span {
+    font-family: 'Roboto', sans-serif;
+    Font-style: normal;
+    Font-size: 20px;
+    color: white;
+}
+
+.e_times {
+    border: 2px white solid;
+    border-top: none;
+    width: 60%;
+    height: 49%;
+}
+
+tr td {
+    font-family: 'Roboto', sans-serif;
+    Font-style: normal;
+    Font-size: 20px;
+    color: white;
+    padding-left: 4px;
+}
+
+/* Tela de Cadastro do jogador */
+
+iframe {
+    border: none;
+}
+
+/* banner */
+
+.titulo_banner {
+    background: white;
+}
+
+.banner_fundo {
+    background-image: url(../img/keyart_crushed\ 2.png);
+    height: 202px;
+}
+
+.banner_fundo img {
+    height: 121px;
+    background-repeat: no-repeat;
+}
+
+.filtro_vermelho {
+    background-color: rgba(94, 8, 8, 0.71);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro_vermelho h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+}
+
+.main_box {
+    height: 1110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* form */
+
+.formulario_jogador {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(48, 48, 48, 1) 17%, rgba(61, 61, 61, 1) 57%, rgba(1, 1, 1, 1) 99%, rgba(0, 0, 0, 1) 100%);
+    width: 64%;
+    height: 629px;
+    box-shadow: 1px 1px 20px 4px #000000;
+}
+
+.formulario {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-between;
+    width: 72%;
+}
+
+form label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+form input {
+    background-color: #ABABAB;
+    border: none;
+    height: 10%;
+    width: 100%;
+}
+
+.button_register {
+    /* box */
+    background: #C31616;
+    border-radius: 10px;
+    /* text */
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    display: inline-block;
+    width: 34%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* lista de jogadore */
+
+.lista_jogadores {
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+    align-items: center;
+    height: 22%;
+}
+
+.lista_jogadores h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border: 2px white solid;
+}
+
+.listas_jogadores_table {
+    width: 100%;
+}
+
+th {
+    font-family: 'Roboto', sans-serif;
+    Font-style: normal;
+    Font-size: 20px;
+    color: white;
+    font-weight: 400;
+    width: 100px
+}
+
+.td_lista td {
+    width: 65%;
+}
 
 @media(max-width: 768px) {
     .container {
         width: 93vw
     }
-
-    .box_banner{
-
+    .box_banner {
         justify-content: center;
     }
-
-    .img_cs{
-
+    .img_cs {
         display: none;
     }
-
-    .nav_logo img{
-
+    .nav_logo img {
         width: 16%;
-        
     }
-
-    .container_campeonatos{
-
+    .container_campeonatos {
         display: flex;
         align-items: center;
         width: 100%;
         height: 102%;
     }
-
-    .container_campeonatos p{
-
+    .container_campeonatos p {
         display: inline;
-
-        
     }
-
-    .box_campeonatos img{
-
+    .box_campeonatos img {
         display: none;
     }
-
     /* partidas */
-
-    .box_jogos_extra{
-
+    .box_jogos_extra {
         display: none;
     }
-
-    .textos_time{
-
+    .textos_time {
         margin-left: 5px;
         font-size: 166%;
     }
-
-    .em_breve{
-
+    .em_breve {
         font-size: 154%;
     }
-
     /* Noticias */
-
-    #off_768{
-        display:none;
+    #off_768 {
+        display: none;
     }
-
-    .box_noticias{
-
+    .box_noticias {
         height: 110.8%;
     }
-
-    .textos_noticias{
-
+    .textos_noticias {
         height: auto;
     }
-
-    .textos_noticias p{
-
-
-        display:none;
+    .textos_noticias p {
+        display: none;
     }
-
-    .proximos_jogos h2{
-
+    .proximos_jogos h2 {
         font-size: 241%;
     }
-
-    .logo_footer{
-        display:none;
+    /* footer */
+    .logo_footer {
+        display: none;
     }
-
-    .container_footer{
+    .container_footer {
         justify-content: space-evenly;
     }
-
-    .links_footer{
+    .links_footer {
         width: 55%;
     }
-}    
+    .box_button h1 {
+        font-size: 9vw;
+    }
+    .box_button span {
+        font-size: 5vw;
+    }
+    .box_button a {
+        font-size: 8vw;
+    }
+    .container_campeonatos h2 {
+        font-size: 6vw;
+    }
+    .container_campeonatos p {
+        font-size: 3vw;
+        width: 69vw;
+    }
+}
